@@ -1,0 +1,39 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1>Processamento de Imagem</h1>
+            <p class="lead">Para inicar é necessário fazer o upload da imagem.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form name="myForm">
+                <fieldset>
+                    <label class="btn btn-outline-primary btn-file">
+                        Localizar Imagem <input type="file" style="display: none;" ngf-select ng-model="picFile"
+                                                name="file" accept="image/*" ngf-max-size="2MB" required
+                                                ngf-model-invalid="errorFile">
+                    </label>
+                    <i ng-show="myForm.file.$error.maxSize">Imagem muito grande {{errorFile.size / 1000000|number:1}}MB:
+                        max 2M</i>
+                    <img ng-show="myForm.file.$valid" ngf-thumbnail="picFile" class="thumb">
+                    <button class="btn btn-outline-danger" ng-click="picFile = null" ng-show="picFile">Remover</button>
+                    <br>
+                    <button class="btn btn-outline-success" ng-disabled="!myForm.$valid" ng-click="uploadPic(picFile)">
+                        Salvar
+                        Imagem
+                    </button>
+                    <br>
+                    <span ng-show="picFile.result">Imagem Salva</span>
+                </fieldset>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="card">
+        <img alt="Imagem Atual" ng-src="{{imagem}}" data-holder-rendered="true">
+        <p class="card-text">Imagem Atual</p>
+    </div>
+</div>

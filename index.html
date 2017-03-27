@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_br" ng-app="appProcessamento">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Top navbar example for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse mb-4">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Processamento de Imagem</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#/inicio">Início <span ng-if="pagina == 'inicio'" class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/nagativo">Negativo <span ng-if="pagina == 'nagativo'" class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Threshold</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/histograma">Histograma</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" ng-view>
+</div>
+
+<script src="node_modules/bootstrap/node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/bootstrap/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/node_modules/tether/dist/js/tether.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/jimp/browser/lib/jimp.min.js"></script>
+<script src="node_modules/highcharts/highcharts.js"></script>
+<script src="node_modules/highcharts/modules/exporting.js"></script>
+<script src="js/script.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-route/angular-route.min.js"></script>
+<script src="node_modules/ngstorage/ngStorage.min.js"></script>
+<script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+<script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+
+<script src="modulo.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+<!--
+http-server -a 192.168.254.247  -p 8002 -c-1
+
+Negativo
+Threshold
+Operações lógicas (AND, OR)
+Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)
+Equalização de histograma
+
+Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização
+Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)
+
+-->
