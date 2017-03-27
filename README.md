@@ -1,30 +1,25 @@
 ![Ulbra Logo](http://ulbra-to.br/cursos/Ciencia-da-Computacao/banner.jpg)
 
 
-# Palavras Cruzadas #
+# Computação Gráfica #
 
 
-Projetos para disciplina de Gestão Tecnologia 1
+Projetos para disciplina de Computação Gráfica
+
+Negativo
+Threshold
+Operações lógicas (AND, OR)
+Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)
+Equalização de histograma
+Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização
+Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)
 
 Download das dependências:
 
     sudo npm install
     
+Start servidor http:
 
-Download dos pacotes:
-
-    bower install
- 
-
-Restaurar banco de dados:
-
-    sudo mongorestore --db palavras-cruzadas --drop /{seu caminho}/banco/
-
-Start servidor Nodejs /palavras-cruzadas/server/:
-
-    sudo node app.js
+    http-server -a localhost  -p 8002 -c-1
     
-**Exemplo Aluno:** (http://35.185.110.128/palavras-cruzadas/)
 
-
-**Exemplo Professor:** (http://35.185.110.128/palavras-cruzadas/#/professor)
