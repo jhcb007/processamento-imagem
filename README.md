@@ -6,19 +6,19 @@
 
 Projetos para disciplina de Computação Gráfica
 
-Negativo
+<b>Negativo</b>
 
-Threshold
+<b>Threshold</b>
 
-Operações lógicas (AND, OR)
+<b>Operações lógicas (AND, OR)</b>
 
-Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)
+<b>Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)</b>
 
-Equalização de histograma
+<b>Equalização de histograma</b>
 
-Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização
+<b>Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização</b>
 
-Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)
+<b>Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)</b>
 
 Download das dependências:
 
