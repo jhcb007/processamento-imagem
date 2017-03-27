@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Top navbar example for Bootstrap</title>
+    <title>Processamento de Imagem</title>
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
@@ -18,19 +18,19 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Processamento de Imagem</a>
+    <a class="navbar-brand" href="#/inicio">Processamento de Imagem</a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link active" href="#/inicio">Início <span ng-if="pagina == 'inicio'" class="sr-only">(current)</span></a>
+            <li class="nav-item" ng-class="{'active': pagina == 'inicio'}">
+                <a class="nav-link" href="#/inicio">Início</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#/nagativo">Negativo <span ng-if="pagina == 'nagativo'" class="sr-only">(current)</span></a>
+            <li class="nav-item" ng-class="{'active': pagina == 'negativo'}">
+                <a class="nav-link" href="#/negativo">Negativo</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" ng-class="{'active': pagina == 'threshold'}">
                 <a class="nav-link" href="#">Threshold</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" ng-class="{'active': pagina == 'histograma'}">
                 <a class="nav-link" href="#/histograma">Histograma</a>
             </li>
         </ul>
@@ -62,14 +62,4 @@
 </html>
 <!--
 http-server -a 192.168.254.247  -p 8002 -c-1
-
-Negativo
-Threshold
-Operações lógicas (AND, OR)
-Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)
-Equalização de histograma
-
-Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização
-Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)
-
 -->

@@ -18,7 +18,7 @@ function InicioController($rootScope, $scope, $sessionStorage, Upload) {
 }
 
 function NegativoController($rootScope, $sessionStorage, $scope) {
-    $rootScope.pagina = 'nagativo';
+    $rootScope.pagina = 'negativo';
     $scope.imagem = $sessionStorage.imagem;
 
     Jimp.read($scope.imagem).then(function (imagem) {
