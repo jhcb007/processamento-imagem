@@ -4,7 +4,7 @@
 # Computação Gráfica #
 
 
-Projeto para disciplina de Computação Gráfica
+Projeto de Computação Gráfica
 
 **Opções**
   - Negativo
