@@ -6,20 +6,15 @@
 
 Projetos para disciplina de Computação Gráfica
 
-<b>Negativo</b>
-
-<b>Threshold</b>
-
-<b>Operações lógicas (AND, OR)</b>
-
-<b>Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)</b>
-
-<b>Equalização de histograma</b>
-
-<b>Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização</b>
-
-<b>Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)</b>
-
+**Opções**
+  - Negativo
+  - Threshold
+  - Operações lógicas (AND, OR)
+  - Operações aritméticas (Soma, Subtração, Multiplicação, Divisão)
+  - Equalização de histograma
+  - Filtragem espacial: Filtro de suavização que permita ao usuário definir o nível da suavização
+  - Filtragem espacial: Filtro de realce (qualquer tipo de filtro de realce)
+  
 Download das dependências:
 
     sudo npm install
