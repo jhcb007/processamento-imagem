@@ -17,7 +17,7 @@ Projeto para disciplina de Computação Gráfica
   
 Download das dependências:
 
-    sudo npm install
+    npm install
     
 Start servidor http:
 
