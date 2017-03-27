@@ -1,8 +1,15 @@
+<div ng-show="imagem" class="row mb-2 text-center">
+    <div class="card">
+        <img alt="Imagem Atual" ng-src="{{imagem}}" data-holder-rendered="true">
+        <p class="card-text">Imagem Atual</p>
+    </div>
+</div>
+
 <div class="jumbotron">
     <div class="row">
         <div class="col-12">
             <h1>Processamento de Imagem</h1>
-            <p class="lead">Para inicar é necessário fazer o upload da imagem.</p>
+            <p class="lead">Para iniciar é necessário fazer o upload da imagem.</p>
         </div>
     </div>
     <div class="row">
@@ -29,11 +36,5 @@
                 <br>
             </form>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="card">
-        <img alt="Imagem Atual" ng-src="{{imagem}}" data-holder-rendered="true">
-        <p class="card-text">Imagem Atual</p>
     </div>
 </div>
